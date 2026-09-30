@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "High-Density Diffuse Optical Tomography Audiovisual Movie Viewing Dataset",
-  "description": "This dataset comprises high-density diffuse optical tomography (HD-DOT) neuroimaging data from 5 participants performing functional localizer and naturalistic movie viewing tasks. Data are provided in SNIRF format with optode positions and anatomical landmarks registered to subject-specific head models, enabling investigation of brain function during audiovisual stimulation using optical neuroimaging methods.",
-  "methods_description": "Participants completed functional localizer and movie viewing tasks while undergoing high-density diffuse optical tomography acquisition. Optode locations and anatomical landmarks were registered to individual head models for each subject.",
+  "description": "This dataset contains high-density diffuse optical tomography (HD-DOT) recordings from 5 participants performing functional localizer tasks and audiovisual movie viewing. Data are provided in SNIRF format together with optode and landmark locations linked to subject-specific head models. It supports research on mapping brain function during naturalistic viewing and on decoding multisensory stimuli.",
+  "methods_description": "Participants completed functional localizer and movie viewing tasks while HD-DOT data were recorded. Data are stored in SNIRF format with optode and landmark locations associated with subject-specific head models.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -20,7 +20,14 @@
     },
     "Kalyan Tripathy": {},
     "Alexandra M Svoboda": {},
-    "Mariel L Schroeder": {},
+    "Mariel L Schroeder": {
+      "orcid": "0000-0001-6524-2295",
+      "affiliations": [
+        {
+          "name": "Washington University School of Medicine, Mallinckrodt Institute of Radiology, St. Louis, Missouri, United States"
+        }
+      ]
+    },
     "Sean M Rafferty": {},
     "Edward J Richter": {},
     "Christopher Tracy": {},
@@ -28,12 +35,33 @@
     "Madison Booth": {},
     "Andrew K Fishell": {},
     "Arefeh Sherafati": {},
-    "Zachary E Markow": {},
+    "Zachary E Markow": {
+      "orcid": "0000-0002-2587-6821",
+      "affiliations": [
+        {
+          "name": "Washington University School of Medicine, Mallinckrodt Institute of Radiology, St. Louis, Missouri, United States"
+        }
+      ]
+    },
     "Muriah D Wheelock": {},
     "Ana Maria Arbelaez": {},
-    "Bradley L Schlaggar": {},
+    "Bradley L Schlaggar": {
+      "orcid": "0000-0002-9246-2469",
+      "affiliations": [
+        {
+          "name": "Kennedy Krieger Institute, Baltimore, Maryland, United States"
+        }
+      ]
+    },
     "Christopher D Smyser": {},
-    "Adam T Eggebrecht": {},
+    "Adam T Eggebrecht": {
+      "orcid": "0000-0002-6320-2676",
+      "affiliations": [
+        {
+          "name": "Washington University in St. Louis, Division of Biological and Biomedical Sciences, St. Louis, Missouri, United States"
+        }
+      ]
+    },
     "Joseph P Culver": {}
   },
   "keywords": [
@@ -41,29 +69,24 @@
       "term": "diffuse optical tomography"
     },
     {
-      "term": "neuroimaging"
+      "term": "HD-DOT"
     },
     {
-      "term": "audiovisual processing"
+      "term": "functional near-infrared spectroscopy"
+    },
+    {
+      "term": "naturalistic viewing"
     },
     {
       "term": "movie viewing"
     },
     {
-      "term": "functional localization"
-    },
-    {
-      "term": "SNIRF format"
+      "term": "SNIRF"
     }
   ],
   "related_identifiers": [
     {
       "identifier": "https://github.com/nemarDatasets/on007473",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on007473",
       "identifier_type": "URL",
       "relation_type": "IsDescribedBy"
     },
@@ -81,6 +104,11 @@
       "identifier": "10.18112/openneuro.ds007473.v1.0.0",
       "identifier_type": "DOI",
       "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/on007473",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
   ],
   "resource_type_specific": "fNIRS Dataset",
@@ -88,7 +116,7 @@
     "nirs"
   ],
   "sizes": [
-    "38.9 GB (199 files)"
+    "36.23 GB (199 files)"
   ],
   "formats": [
     ".json",
