@@ -1,2 +1,7 @@
+Metadata update 2026-10-08
+  - Added stimuli/stimuli.tsv + stimuli.json (20 movie clips: source, duration, start in the source) and stimuli/run_to_clip.tsv + json (80 runs, from the authors' table); no media added.
+  - README: section 'Stimuli' (clip identities, how they were located, events in samples, SNIRF landmarkLabels).
+  - dataset_description.json: GeneratedBy entry for this enrichment.
+
 1.0.0 2026-03-05
   - Initial version
