@@ -27,3 +27,17 @@ a movie identity (the same label shows different clips in different sessions).
 
 Known file issues (unchanged here): `*_events.tsv` give `onset` and `duration` in samples (10.42 Hz), not seconds; and
 `mne.io.read_raw_snirf` fails on these SNIRF files because `landmarkLabels` is stored 2-D.
+
+### Runs of A04 in ses-7 and ses-8 (added 2026-10-09)
+
+Sub-A04 has 16 movie-task runs outside the 40 A04 movie runs of the 2024 paper (its Supplemental Table ST1 counts
+40 movie runs for A04; the authors' run table `MovieParticipants_Adults.mat` covers ses-2 to ses-6): ses-7 MOV002-MOV009 and
+ses-8 MOV001-MOV008. The 2025 paper (Tripathy et al., Neurophotonics 12(1):015002, cited above) says that this data set
+"was expanded to include additional movie viewing runs" and that supplemental data "were collected from one participant who
+listened to audio clips without visuals and watched silent movies stripped of audio for a control experiment"; its
+Supplementary Fig. 4A/C: "Participant A04 was presented with four different audio clips without any visuals twice each
+over the course of an imaging session" and "with four different silent movie clips twice each over the course of an
+imaging session". Two sessions of 8 control runs each match ses-7 and ses-8 (8 runs each) of A04. Which session is the
+audio-only one and which the silent-video one, which four clips were used and in what order are not stated, and the SNIRF
+sidecars of these runs give only `TaskName` MOVnnn. Until the authors confirm, these 16 runs should not be taken as
+audiovisual movie viewing; `stimuli/run_to_clip.tsv` does not list them.
