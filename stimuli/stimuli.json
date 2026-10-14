@@ -14,8 +14,12 @@
   "rights": {
     "Description": "Rights note. 'third-party; not included': the video belongs to its rights holder and is not part of this dataset."
   },
-  "presented_duration_s": {
-    "Description": "Duration of the movie period in the runs that show this clip (from the SNIRF stim marks; 0.1-s rounding).",
+  "presented_duration_min_s": {
+    "Description": "Shortest duration of the movie period over the runs that show this clip (from the SNIRF stim marks; 0.1-s rounding).",
+    "Units": "s"
+  },
+  "presented_duration_max_s": {
+    "Description": "Longest duration of the movie period over the runs that show this clip (from the SNIRF stim marks; 0.1-s rounding); equals presented_duration_min_s when every run gives the same value.",
     "Units": "s"
   },
   "source_in_s": {
