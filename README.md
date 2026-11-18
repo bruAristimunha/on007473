@@ -42,13 +42,7 @@ audio-only one and which the silent-video one, which four clips were used and in
 sidecars of these runs give only `TaskName` MOVnnn. Until the authors confirm, these 16 runs should not be taken as
 audiovisual movie viewing; `stimuli/run_to_clip.tsv` does not list them.
 
-## Known issues
+## Contributed notes (version 1.0.2)
 
-Found while reading every recording of version 1.0.0 with MNE-Python and mne_bids:
-
-- The SNIRF files store `/nirs/probe/landmarkLabels` as a 2-D (1, N) string array; SNIRF v1.1 specifies a 1-D string
-  array, and MNE-Python 1.13 fails on the 2-D form, so the files do not open in MNE.
-- events.tsv onset and duration were given in samples; they are now in seconds (sample / sampling frequency), which
-  equals the SNIRF stimulus onsets.
-- channels.tsv named both wavelengths of a channel S1-D1 (duplicate names); it now uses S<source>_D<detector>
-  <wavelength> from the SNIRF measurement list.
+- The SNIRF files store /nirs/probe/landmarkLabels as a 2-D (1, N) string array; SNIRF v1.1 specifies a 1-D string array, and MNE-Python 1.13 fails on the 2-D form, so the files do not open in MNE. The SNIRF files are unchanged in this version.
+- The paragraph "Known file issues (unchanged here)" above describes version 1.0.1. From version 1.0.2, events.tsv onset and duration are in seconds; the landmarkLabels issue remains.
